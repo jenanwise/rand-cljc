@@ -2,6 +2,7 @@
 
 Tiny portable explicit-PRNG versions of `clojure.core`'s randomizing functions.
 
+[![Build Status](https://travis-ci.org/jenanwise/rand-cljc.svg?branch=master)](https://travis-ci.org/jenanwise/rand-cljc)
 
 ## Installation
 
