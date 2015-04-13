@@ -12,7 +12,7 @@ Tiny portable explicit-PRNG versions of `clojure.core`'s randomizing functions.
 
 ## Motivation
 
-Clojure and ClojureScript provides five (as of 1.7.0-beta1
+Clojure and ClojureScript provides five (as of 1.7.0-beta1)
 randomizing functions:
 
 * `rand`
@@ -33,7 +33,7 @@ otherwise exactly the same as their `clojure.core` counterparts.
 
 ## Usage
 
-Any PRNG that implements the very small `IRandom` protocol can be used
+Any PRNG that satisfies the very small `IRandom` protocol can be used
 as the first argument to the randomizing functions. For convenience,
 you can use the supplied `(rng)` function to create a
 platform-appropriate PRNG: `Random` on the JVM and Closure's
@@ -104,7 +104,6 @@ open test.html
 # ClojureScript in headless browser.
 # Requires phantomjs.
 lein cljsbuild test
-
 ```
 
 
