@@ -10,23 +10,6 @@ page.onConsoleMessage = function (message) {
     console.log(message);
 };
 
-function getCount() {
-    return page.evaluate(function() {
-        return window.failedTestCount;
-    });
-}
-
-function check() {
-    var count = getCount();
-    if (!count) {
-        console.log("Waiting...");
-        setTimeout(check, 1000);
-    }
-    else {
-        console.log("GOT COUNT:", count.count);
-        phantom.exit(count.count);
-    }
-}
 page.open(url, function (status) {
     if (status != "success") {
         console.error('Failed to open ' + url);
