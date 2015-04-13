@@ -1,0 +1,4 @@
+#!/bin/bash
+# Run all headless tests, Clojure and ClojureScript.
+# Exit non-zero if any errors.
+lein do test rand-cljc.core-test, cljsbuild test
